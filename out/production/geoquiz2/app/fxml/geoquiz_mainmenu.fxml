@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="mainmenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.MainController">
+   <children>
+      <Button fx:id="startgame" layoutX="242.0" layoutY="169.0" mnemonicParsing="false" onAction="#startGame" prefHeight="39.0" prefWidth="115.0" text="Spustit hru" />
+      <Button fx:id="loadquestion" layoutX="242.0" layoutY="244.0" mnemonicParsing="false" onAction="#loadQuestion" prefHeight="39.0" prefWidth="115.0" text="Načíst otázky" />
+      <Text layoutX="121.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zeměpisný kvíz" textAlignment="CENTER" wrappingWidth="357.830078125">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Label layoutX="444.0" layoutY="369.0" text="Powered by Tomáš Marek" />
+   </children>
+</Pane>
