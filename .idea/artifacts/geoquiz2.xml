@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="geoquiz2">
+    <output-path>$PROJECT_DIR$/out/artifacts/geoquiz2</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="app.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="GeoQuizGame" />
+        <option name="vendor" value="Tomáš Marek" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="geoquiz2.jar">
+        <element id="module-output" name="geoquiz2" />
+        <element id="library" level="project" name="lib" />
+        <element id="file-copy" path="$USER_HOME$/Downloads/slf4j-api-1.7.36.jar" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

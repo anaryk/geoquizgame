@@ -12,8 +12,10 @@ import com.dlsc.gmapsfx.javascript.object.MapOptions;
 import com.dlsc.gmapsfx.javascript.object.MapTypeIdEnum;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.text.DecimalFormat;
+import java.util.Properties;
 import java.util.ResourceBundle;
 
 import javafx.concurrent.Task;
@@ -63,6 +65,7 @@ public class GameController implements Initializable {
     private boolean multiplayer = false;
 
     private String actualplayer;
+    private String googleMapsApiKey;
 
     private int playerOneScore = 0;
 
@@ -92,6 +95,13 @@ public class GameController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        Properties properties = new Properties();
+        try (InputStream is = getClass().getResourceAsStream("../application.properties")) {
+            properties.load(is);
+            googleMapsApiKey = properties.getProperty("GoogleMapsAPI.license.key");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         roundsCount = 10;
         try {
             nextGame(false);
